@@ -13,7 +13,7 @@ def rearrange_digits(input_list):
     sortedList = mergeSort(input_list, 0, len(input_list) - 1)
     numOne = ''
     numTwo = ''
-    
+
     for i in range(0, len(sortedList)):
         if i % 2 == 0:
             numOne = numOne + str(sortedList[len(sortedList) - 1 - i])
@@ -67,3 +67,5 @@ def test_function(test_case):
 
 test_function([[1, 2, 3, 4, 5], [542, 31]])
 test_function([[4, 6, 2, 5, 9, 8], [964, 852]])
+test_function([[0, 0, 0, 0, 0, 1, 1], [1000, 100]])
+test_function([[0, 0, 0, 0, 0, 0, 1], [1000, 0]])
